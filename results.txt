@@ -1,0 +1,133 @@
+
+HeLa cells dataset:
+
+Cell mask predictor (binary masks):
+Test (best model based on the smallest validation loss):
+Cross-validation/metrics	Mean BCE Loss	DICE	PRECISION	RECALL	ACCURACY
+FOLD 1	                    0.1644	        93.40%	97.14%	    90.00%	93.37%
+FOLD 2	                    0.1414	        94.36%	96.05%  	92.90%	94.23%
+FOLD 3	                    0.1348      	94.58%	96.09%  	93.18%	94.43%
+FOLD 4	                    0.1493      	94.01%	95.73%  	92.42%	93.86%
+FOLD 5	                    0.1651      	93.29%	96.51%  	90.35%	93.19%
+
+Validation (best model using the lowest BCE Loss as criteria):
+Cross-validation/metrics	Mean BCE Loss	DICE	PRECISION	RECALL	ACCURACY
+FOLD 1	                    0.1260      	94.86%	94.29%  	95.48%	94.79%
+FOLD 2	                    0.1219	        94.93%	93.49%	    96.50%	94.86%
+FOLD 3	                    0.1252	        94.93%	93.26%	    96.72%	94.83%
+FOLD 4	                    0.1263	        94.77%	93.64%	    95.98%	94.80%
+FOLD 5	                    0.1195          94.91%	94.44%	    95.43%	95.01%
+
+
+Intra-cellular density predictor:
+Test (best model based on the smallest validation loss):
+Cross-validation/metrics	Mean MSE
+FOLD 1	                    0.0338
+FOLD 2                  	0.0295
+FOLD 3	                    0.0274
+FOLD 4                  	0.0350
+FOLD 5                  	0.0325
+
+Validation (best model using the lowest BCE Loss as criteria):
+Cross-validation/metrics	Mean MSE
+FOLD 1	                    0.0256
+FOLD 2                      0.0258
+FOLD 3                      0.0252
+FOLD 4                  	0.0249
+FOLD 5                  	0.0246
+
+
+
+
+
+Microglial cells in-house dataset (ICM):
+
+Cell mask predictor (binary masks):
+Test (best model based on the smallest validation loss):
+Cross-validation/metrics	Mean BCE Loss	DICE	PRECISION	RECALL	ACCURACY
+FOLD 1	                    0.1032      	95.77%	96.23%	    95.34%	95.88%
+FOLD 2	                    0.1033	        96.01%	95.47%  	96.61%	96.05%
+FOLD 3	                    0.1033	        95.65%	97.74%	    93.65%	95.83%
+FOLD 4	                    0.0929	        96.45%	96.49%  	96.43%	96.54%
+FOLD 5	                    0.0986	        96.00%	97.31%	    94.73%	96.14%
+
+Validation (best model using the lowest BCE Loss as criteria):
+Cross-validation/metrics	Mean BCE Loss	DICE	PRECISION	RECALL	ACCURACY
+FOLD 1	                    0.1248	        94.95%	94.35%	    95.58%	94.69%
+FOLD 2	                    0.1224	        95.09%	93.28%	    96.98%	94.70%
+FOLD 3	                    0.1192	        94.91%	95.11%	    94.72%	94.78%
+FOLD 4	                    0.1168	        95.20%	93.40%	    97.10%	94.91%
+FOLD 5	                    0.1205	        95.02%	93.92%  	96.17%	94.80%
+
+Intra-cellular density predictor:
+Test (best model based on the smallest validation loss):
+Cross-validation/metrics	Mean MSE
+FOLD 1	                    9.5669e-05
+FOLD 2	                    8.4474e-05
+FOLD 3                  	9.2792e-05
+FOLD 4	                    8.2800e-05
+FOLD 5                  	7.5163e-05
+
+Validation (best model using the lowest BCE Loss as criteria):
+Cross-validation/metrics	Mean MSE
+FOLD 1	                    0.0213
+FOLD 2                  	0.0216
+FOLD 3                  	0.0209
+FOLD 4                  	0.0212
+FOLD 5                  	0.0215
+
+Dim to be added : resolution microns per pixel 
+
+
+                Time per image              Average Dice coefficent
+LabelMe         96.1 sec (std 8.03sec)      91.30% (std 0.90%)
+Our tool        14.6 sec (std 1.35sec)      94.97% (std 0.88%)
+
+
+LabelMe     Time (sec)  DICE
+
+img_0       108         92.05%
+img_1       95          92.81%
+img_2       108         91.52%
+img_3       87          90.2%
+img_4       85          91.32%
+img_5       88          90.69%
+img_6       102         91.66%
+img_7       99          89.7%
+img_8       90          92.2%
+img_9       99          90.94%
+
+Time (sec)
+Mean : 96.1 = np.mean([108, 95, 108,87,85,88,102,99,90,99])
+std  : 8.030566605165541 = np.std([108, 95, 108,87,85,88,102,99,90,99])
+
+DICE (%)
+Mean : 91.30 % = np.mean([92.05, 92.81, 91.52, 90.2, 91.32, 90.69, 91.66, 89.7, 92.2, 90.94])
+std  : 0.900104993875714 = np.std([92.05, 92.81, 91.52, 90.2, 91.32, 90.69, 91.66, 89.7, 92.2, 90.94])
+
+Our tool    time sec    DICE
+
+img_0       13 sec      95.96%
+img_1       13 sec      95.68%
+img_2       15 sec      95.14%
+img_3       14 sec      94.31%
+img_4       15 sec      95.59%
+img_5       14 sec      93.64%
+img_6       16 sec      94.08%
+img_7       17 sec      93.71%
+img_8       16 sec      95.76%
+img_9       13 sec      95.87%
+
+Time (sec)
+Mean : 14.6 = np.mean([13 ,13, 15 ,14,15,14, 16,17,16,13])
+std  : 1.3564659966250536 = np.std([13 ,13, 15 ,14,15,14, 16,17,16,13])
+
+DICE (%)
+Mean : 94.97 % = np.mean([95.96, 95.68, 95.14, 94.31, 95.59, 93.64, 94.08, 93.71, 95.76, 95.87])
+std  : 0.8896988254460062 = np.std([95.96, 95.68, 95.14, 94.31, 95.59, 93.64, 94.08, 93.71, 95.76, 95.87])
+
+Video:
+Add DICE % for each image
+
+
+LICENSE.md

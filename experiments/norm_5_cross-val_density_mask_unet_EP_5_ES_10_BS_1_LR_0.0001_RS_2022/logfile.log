@@ -1,0 +1,399 @@
+2022-02-07 17:08:38 - root - INFO - [INFO] Using cuda
+2022-02-07 17:08:38 - root - INFO - [INFO]      Tesla V100-SXM2-32GB
+2022-02-07 17:08:43 - root - INFO - [INFO] Cross-validation in progress ...
+2022-02-07 17:08:43 - root - INFO - [INFO] Fold 1 : with 538 training, 134 validation images
+2022-02-07 17:08:43 - root - INFO - [INFO] Caching the given dataset with 538 images and 538 masks
+2022-02-07 17:09:22 - root - INFO - [INFO] Caching the given dataset with 134 images and 134 masks
+2022-02-07 17:09:33 - root - INFO - [INFO] Starting training:
+        Experiment name                  : norm_5_cross-val_density_mask_unet_EP_5_ES_10_BS_1_LR_0.0001_RS_2022
+        Epochs number                    : 5
+        Early stop val loss- wait epochs : 10
+        Batch size                       : 1
+        Learning rate                    : 0.0001
+        Training dataset size            : 538
+        Validation dataset size          : 134
+        PyTorch random seed              : 2022
+        Model input channels             : 1
+        Model output channels            : 1
+        Path to logs and ckps            : ./experiments/norm_5_cross-val_density_mask_unet_EP_5_ES_10_BS_1_LR_0.0001_RS_2022
+        Cross-validation                 : 5
+    
+2022-02-07 17:10:22 - root - INFO - [INFO] Epoch 0 took 0 h 0 min 49:
+                Mean train loss          :  0.04433641567493903
+                Mean val   loss          :  0.034909326374641995
+
+        
+2022-02-07 17:10:23 - root - INFO - 
+                Best epoch 0 :
+            
+            
+2022-02-07 17:11:05 - root - INFO - [INFO] Epoch 1 took 0 h 0 min 42:
+                Mean train loss          :  0.02791824214485886
+                Mean val   loss          :  0.02654255142630036
+
+        
+2022-02-07 17:11:05 - root - INFO - 
+                Best epoch 1 :
+            
+            
+2022-02-07 17:11:48 - root - INFO - [INFO] Epoch 2 took 0 h 0 min 42:
+                Mean train loss          :  0.025169531091161376
+                Mean val   loss          :  0.025961771669950503
+
+        
+2022-02-07 17:11:48 - root - INFO - 
+                Best epoch 2 :
+            
+            
+2022-02-07 17:12:30 - root - INFO - [INFO] Epoch 3 took 0 h 0 min 42:
+                Mean train loss          :  0.02360089375121609
+                Mean val   loss          :  0.03347354771485969
+
+        
+2022-02-07 17:13:13 - root - INFO - [INFO] Epoch 4 took 0 h 0 min 42:
+                Mean train loss          :  0.022449150451261647
+                Mean val   loss          :  0.025661606445852945
+
+        
+2022-02-07 17:13:13 - root - INFO - 
+                Best epoch 4 :
+            
+            
+2022-02-07 17:13:13 - root - INFO - [INFO] All cache deleted
+2022-02-07 17:13:13 - root - INFO - [INFO] All cache deleted
+2022-02-07 17:13:13 - root - INFO - [INFO] Fold 1 : Testing the best model parameters ... 
+2022-02-07 17:13:13 - root - INFO - [INFO] Caching the given dataset with 84 images and 84 masks
+2022-02-07 17:13:22 - root - INFO - 
+                        -- Testing the best model --
+                        Test total loss     :  2.8394833020865917
+                        Test loss per image :  0.033803372643888
+                        Dice                :  0.5953320328678403
+
+                        TP                  :  0.00010507089583901379
+                        FP                  :  0.9998949291041609
+                        TN                  :  0.0
+                        FN                  :  0.0
+
+                        Precision           :  0.00010507089583901379
+                        Recall              :  1.0
+                        Accuracy            :  0.00010507089583901379
+                        F1-score            :  0.0002101168326329906
+
+                
+2022-02-07 17:13:22 - root - INFO - [INFO] All cache deleted
+2022-02-07 17:13:22 - root - INFO - [INFO] Fold 2 : with 538 training, 134 validation images
+2022-02-07 17:13:22 - root - INFO - [INFO] Caching the given dataset with 538 images and 538 masks
+2022-02-07 17:13:40 - root - INFO - [INFO] Caching the given dataset with 134 images and 134 masks
+2022-02-07 17:13:44 - root - INFO - [INFO] Starting training:
+        Experiment name                  : norm_5_cross-val_density_mask_unet_EP_5_ES_10_BS_1_LR_0.0001_RS_2022
+        Epochs number                    : 5
+        Early stop val loss- wait epochs : 10
+        Batch size                       : 1
+        Learning rate                    : 0.0001
+        Training dataset size            : 538
+        Validation dataset size          : 134
+        PyTorch random seed              : 2022
+        Model input channels             : 1
+        Model output channels            : 1
+        Path to logs and ckps            : ./experiments/norm_5_cross-val_density_mask_unet_EP_5_ES_10_BS_1_LR_0.0001_RS_2022
+        Cross-validation                 : 5
+    
+2022-02-07 17:14:26 - root - INFO - [INFO] Epoch 0 took 0 h 0 min 42:
+                Mean train loss          :  0.045262723998426284
+                Mean val   loss          :  0.03164481235417857
+
+        
+2022-02-07 17:14:27 - root - INFO - 
+                Best epoch 0 :
+            
+            
+2022-02-07 17:15:09 - root - INFO - [INFO] Epoch 1 took 0 h 0 min 42:
+                Mean train loss          :  0.027900954492071636
+                Mean val   loss          :  0.027933716829588163
+
+        
+2022-02-07 17:15:09 - root - INFO - 
+                Best epoch 1 :
+            
+            
+2022-02-07 17:15:52 - root - INFO - [INFO] Epoch 2 took 0 h 0 min 42:
+                Mean train loss          :  0.02530915335125418
+                Mean val   loss          :  0.027544393843568084
+
+        
+2022-02-07 17:15:52 - root - INFO - 
+                Best epoch 2 :
+            
+            
+2022-02-07 17:16:34 - root - INFO - [INFO] Epoch 3 took 0 h 0 min 42:
+                Mean train loss          :  0.023541823218206158
+                Mean val   loss          :  0.02581318996068257
+
+        
+2022-02-07 17:16:35 - root - INFO - 
+                Best epoch 3 :
+            
+            
+2022-02-07 17:17:17 - root - INFO - [INFO] Epoch 4 took 0 h 0 min 42:
+                Mean train loss          :  0.022699726252127645
+                Mean val   loss          :  0.02811792651330357
+
+        
+2022-02-07 17:17:17 - root - INFO - [INFO] All cache deleted
+2022-02-07 17:17:17 - root - INFO - [INFO] All cache deleted
+2022-02-07 17:17:17 - root - INFO - [INFO] Fold 2 : Testing the best model parameters ... 
+2022-02-07 17:17:17 - root - INFO - [INFO] Caching the given dataset with 84 images and 84 masks
+2022-02-07 17:17:23 - root - INFO - 
+                        -- Testing the best model --
+                        Test total loss     :  2.4811536436900496
+                        Test loss per image :  0.029537543377262495
+                        Dice                :  0.5953320328678403
+
+                        TP                  :  0.00010507089583901379
+                        FP                  :  0.9998949291041609
+                        TN                  :  0.0
+                        FN                  :  0.0
+
+                        Precision           :  0.00010507089583901379
+                        Recall              :  1.0
+                        Accuracy            :  0.00010507089583901379
+                        F1-score            :  0.0002101168326329906
+
+                
+2022-02-07 17:17:23 - root - INFO - [INFO] All cache deleted
+2022-02-07 17:17:23 - root - INFO - [INFO] Fold 3 : with 538 training, 134 validation images
+2022-02-07 17:17:23 - root - INFO - [INFO] Caching the given dataset with 538 images and 538 masks
+2022-02-07 17:17:48 - root - INFO - [INFO] Caching the given dataset with 134 images and 134 masks
+2022-02-07 17:17:55 - root - INFO - [INFO] Starting training:
+        Experiment name                  : norm_5_cross-val_density_mask_unet_EP_5_ES_10_BS_1_LR_0.0001_RS_2022
+        Epochs number                    : 5
+        Early stop val loss- wait epochs : 10
+        Batch size                       : 1
+        Learning rate                    : 0.0001
+        Training dataset size            : 538
+        Validation dataset size          : 134
+        PyTorch random seed              : 2022
+        Model input channels             : 1
+        Model output channels            : 1
+        Path to logs and ckps            : ./experiments/norm_5_cross-val_density_mask_unet_EP_5_ES_10_BS_1_LR_0.0001_RS_2022
+        Cross-validation                 : 5
+    
+2022-02-07 17:18:37 - root - INFO - [INFO] Epoch 0 took 0 h 0 min 42:
+                Mean train loss          :  0.04543130060304718
+                Mean val   loss          :  0.08010747205855241
+
+        
+2022-02-07 17:18:37 - root - INFO - 
+                Best epoch 0 :
+            
+            
+2022-02-07 17:19:19 - root - INFO - [INFO] Epoch 1 took 0 h 0 min 42:
+                Mean train loss          :  0.02793810239449476
+                Mean val   loss          :  0.0873689421577685
+
+        
+2022-02-07 17:20:02 - root - INFO - [INFO] Epoch 2 took 0 h 0 min 42:
+                Mean train loss          :  0.025309501482402304
+                Mean val   loss          :  0.035025737512467514
+
+        
+2022-02-07 17:20:02 - root - INFO - 
+                Best epoch 2 :
+            
+            
+2022-02-07 17:20:44 - root - INFO - [INFO] Epoch 3 took 0 h 0 min 42:
+                Mean train loss          :  0.023956193100508703
+                Mean val   loss          :  0.025391779464683427
+
+        
+2022-02-07 17:20:45 - root - INFO - 
+                Best epoch 3 :
+            
+            
+2022-02-07 17:21:27 - root - INFO - [INFO] Epoch 4 took 0 h 0 min 42:
+                Mean train loss          :  0.02256793929714031
+                Mean val   loss          :  0.025264143714431062
+
+        
+2022-02-07 17:21:27 - root - INFO - 
+                Best epoch 4 :
+            
+            
+2022-02-07 17:21:27 - root - INFO - [INFO] All cache deleted
+2022-02-07 17:21:27 - root - INFO - [INFO] All cache deleted
+2022-02-07 17:21:27 - root - INFO - [INFO] Fold 3 : Testing the best model parameters ... 
+2022-02-07 17:21:27 - root - INFO - [INFO] Caching the given dataset with 84 images and 84 masks
+2022-02-07 17:21:32 - root - INFO - 
+                        -- Testing the best model --
+                        Test total loss     :  2.3041699547320604
+                        Test loss per image :  0.027430594699191197
+                        Dice                :  0.5953320328678403
+
+                        TP                  :  0.00010507089583901379
+                        FP                  :  0.9998949291041609
+                        TN                  :  0.0
+                        FN                  :  0.0
+
+                        Precision           :  0.00010507089583901379
+                        Recall              :  1.0
+                        Accuracy            :  0.00010507089583901379
+                        F1-score            :  0.0002101168326329906
+
+                
+2022-02-07 17:21:32 - root - INFO - [INFO] All cache deleted
+2022-02-07 17:21:32 - root - INFO - [INFO] Fold 4 : with 538 training, 134 validation images
+2022-02-07 17:21:32 - root - INFO - [INFO] Caching the given dataset with 538 images and 538 masks
+2022-02-07 17:21:55 - root - INFO - [INFO] Caching the given dataset with 134 images and 134 masks
+2022-02-07 17:22:02 - root - INFO - [INFO] Starting training:
+        Experiment name                  : norm_5_cross-val_density_mask_unet_EP_5_ES_10_BS_1_LR_0.0001_RS_2022
+        Epochs number                    : 5
+        Early stop val loss- wait epochs : 10
+        Batch size                       : 1
+        Learning rate                    : 0.0001
+        Training dataset size            : 538
+        Validation dataset size          : 134
+        PyTorch random seed              : 2022
+        Model input channels             : 1
+        Model output channels            : 1
+        Path to logs and ckps            : ./experiments/norm_5_cross-val_density_mask_unet_EP_5_ES_10_BS_1_LR_0.0001_RS_2022
+        Cross-validation                 : 5
+    
+2022-02-07 17:22:44 - root - INFO - [INFO] Epoch 0 took 0 h 0 min 42:
+                Mean train loss          :  0.04466869771051252
+                Mean val   loss          :  0.03614079813236621
+
+        
+2022-02-07 17:22:44 - root - INFO - 
+                Best epoch 0 :
+            
+            
+2022-02-07 17:23:26 - root - INFO - [INFO] Epoch 1 took 0 h 0 min 42:
+                Mean train loss          :  0.027768699931790947
+                Mean val   loss          :  0.03053618762503142
+
+        
+2022-02-07 17:23:27 - root - INFO - 
+                Best epoch 1 :
+            
+            
+2022-02-07 17:24:09 - root - INFO - [INFO] Epoch 2 took 0 h 0 min 42:
+                Mean train loss          :  0.02503045111008293
+                Mean val   loss          :  0.025635767331930685
+
+        
+2022-02-07 17:24:09 - root - INFO - 
+                Best epoch 2 :
+            
+            
+2022-02-07 17:24:52 - root - INFO - [INFO] Epoch 3 took 0 h 0 min 42:
+                Mean train loss          :  0.02365395843594934
+                Mean val   loss          :  0.024959957157609177
+
+        
+2022-02-07 17:24:52 - root - INFO - 
+                Best epoch 3 :
+            
+            
+2022-02-07 17:25:34 - root - INFO - [INFO] Epoch 4 took 0 h 0 min 42:
+                Mean train loss          :  0.022432882430509674
+                Mean val   loss          :  0.046678994351358555
+
+        
+2022-02-07 17:25:34 - root - INFO - [INFO] All cache deleted
+2022-02-07 17:25:34 - root - INFO - [INFO] All cache deleted
+2022-02-07 17:25:34 - root - INFO - [INFO] Fold 4 : Testing the best model parameters ... 
+2022-02-07 17:25:34 - root - INFO - [INFO] Caching the given dataset with 84 images and 84 masks
+2022-02-07 17:25:39 - root - INFO - 
+                        -- Testing the best model --
+                        Test total loss     :  2.9416352715343237
+                        Test loss per image :  0.035019467518265755
+                        Dice                :  0.5953320328678403
+
+                        TP                  :  0.00010507089583901379
+                        FP                  :  0.9998949291041609
+                        TN                  :  0.0
+                        FN                  :  0.0
+
+                        Precision           :  0.00010507089583901379
+                        Recall              :  1.0
+                        Accuracy            :  0.00010507089583901379
+                        F1-score            :  0.0002101168326329906
+
+                
+2022-02-07 17:25:39 - root - INFO - [INFO] All cache deleted
+2022-02-07 17:25:39 - root - INFO - [INFO] Fold 5 : with 536 training, 136 validation images
+2022-02-07 17:25:39 - root - INFO - [INFO] Caching the given dataset with 536 images and 536 masks
+2022-02-07 17:25:57 - root - INFO - [INFO] Caching the given dataset with 136 images and 136 masks
+2022-02-07 17:26:02 - root - INFO - [INFO] Starting training:
+        Experiment name                  : norm_5_cross-val_density_mask_unet_EP_5_ES_10_BS_1_LR_0.0001_RS_2022
+        Epochs number                    : 5
+        Early stop val loss- wait epochs : 10
+        Batch size                       : 1
+        Learning rate                    : 0.0001
+        Training dataset size            : 536
+        Validation dataset size          : 136
+        PyTorch random seed              : 2022
+        Model input channels             : 1
+        Model output channels            : 1
+        Path to logs and ckps            : ./experiments/norm_5_cross-val_density_mask_unet_EP_5_ES_10_BS_1_LR_0.0001_RS_2022
+        Cross-validation                 : 5
+    
+2022-02-07 17:26:44 - root - INFO - [INFO] Epoch 0 took 0 h 0 min 42:
+                Mean train loss          :  0.045095656456342385
+                Mean val   loss          :  0.029372999841785607
+
+        
+2022-02-07 17:26:44 - root - INFO - 
+                Best epoch 0 :
+            
+            
+2022-02-07 17:27:27 - root - INFO - [INFO] Epoch 1 took 0 h 0 min 42:
+                Mean train loss          :  0.02772856123029574
+                Mean val   loss          :  0.02742355440140647
+
+        
+2022-02-07 17:27:27 - root - INFO - 
+                Best epoch 1 :
+            
+            
+2022-02-07 17:28:09 - root - INFO - [INFO] Epoch 2 took 0 h 0 min 42:
+                Mean train loss          :  0.025229142440149364
+                Mean val   loss          :  0.033910307156689024
+
+        
+2022-02-07 17:28:51 - root - INFO - [INFO] Epoch 3 took 0 h 0 min 42:
+                Mean train loss          :  0.023727495704582935
+                Mean val   loss          :  0.03021467387374929
+
+        
+2022-02-07 17:29:34 - root - INFO - [INFO] Epoch 4 took 0 h 0 min 42:
+                Mean train loss          :  0.022566092101537358
+                Mean val   loss          :  0.024675512563108522
+
+        
+2022-02-07 17:29:34 - root - INFO - 
+                Best epoch 4 :
+            
+            
+2022-02-07 17:29:34 - root - INFO - [INFO] All cache deleted
+2022-02-07 17:29:34 - root - INFO - [INFO] All cache deleted
+2022-02-07 17:29:34 - root - INFO - [INFO] Fold 5 : Testing the best model parameters ... 
+2022-02-07 17:29:34 - root - INFO - [INFO] Caching the given dataset with 84 images and 84 masks
+2022-02-07 17:29:39 - root - INFO - 
+                        -- Testing the best model --
+                        Test total loss     :  2.7372307125478983
+                        Test loss per image :  0.0325860799112845
+                        Dice                :  0.5953320328678403
+
+                        TP                  :  0.00010507089583901379
+                        FP                  :  0.9998949291041609
+                        TN                  :  0.0
+                        FN                  :  0.0
+
+                        Precision           :  0.00010507089583901379
+                        Recall              :  1.0
+                        Accuracy            :  0.00010507089583901379
+                        F1-score            :  0.0002101168326329906
+
+                
+2022-02-07 17:29:39 - root - INFO - [INFO] All cache deleted
