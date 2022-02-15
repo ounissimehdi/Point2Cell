@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Jan 27 14:34:22 2022
-    Sorbonne Université
-    Paris Brain Institute (INSERM, CNRS, Sorbonne Univeristé, AP-HP), INRIA "ARAMIS Lab"
+    Sorbonne université, Sorbonne Center for Artificial Intelligence - SCAI
+    Institut du Cerveau - Paris Brain Institute - ICM (INSERM, CNRS, Sorbonne Univeristé, AP-HP), INRIA "ARAMIS Lab"
 @author: mehdi.ounissi
 @email : mehdi.ounissi@icm-institue.org
          mehdi.ounissi@etu.sorbonne-universite.fr

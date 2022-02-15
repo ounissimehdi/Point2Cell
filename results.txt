@@ -79,7 +79,7 @@ FOLD 5                  	0.0215
 Dim to be added : resolution microns per pixel 
 
 
-                Time per image              Average Dice coefficent
+                Time per image              Average Dice coefficient
 LabelMe         96.1 sec (std 8.03sec)      91.30% (std 0.90%)
 Our tool        14.6 sec (std 1.35sec)      94.97% (std 0.88%)
 

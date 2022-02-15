@@ -342,3 +342,16 @@ Some examples annotated by [LabelMe](https://github.com/wkentaro/labelme) and [P
 |img_8          |90          |92.2%  |16          |95.76%  |
 |img_9          |99          |90.94% |13          |95.87%  |
 
+
+
+email address : daniel.racoceanu@icm-institute.org
+```bash
+@misc{Github,
+  author={Mehdi Ounissi and Daniel Racoceanu},
+  title={Point2Cell: low-shot learning for interactive biomedical image annotation. Instantiation to stain-free phase-contrast microscopy},
+  year={2022},
+  url={https://github.com/ounissimehdi/Point2Cell},
+}
+```
+
+new_dataset
