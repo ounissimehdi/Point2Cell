@@ -317,16 +317,16 @@ if __name__ == '__main__':
     # The fold name
     fold_str =''
 
-    # Make sure the cross_val is bewteen [2, N]
+    # Make sure the cross_val is between [2, N]
     assert 1 < cross_val <= 5, '[ERROR] Cross-Validation must be greater then 2 and less or equal 5'
 
-    # Make sure the cross_val is bewteen [2, N]
+    # Make sure the cross_val is between [2, N]
     assert cross_val == len(folds_done), f'[ERROR] Cross-Validation switches must match but we have {cross_val} / and {len(folds_done)} switches'
 
-    # Recaling the images and masks
+    # Rescaling the images and masks
     scale_factor = 1
 
-    # Make sure the cross_val is bewteen [2, N]
+    # Make sure the cross_val is between [2, N]
     assert 0 < scale_factor <= 1, '[ERROR] Scale must be between ]0, 1]'
 
     # The experiment name to keep track of all logs
@@ -349,7 +349,7 @@ if __name__ == '__main__':
     # Creating the experiment folder to store all logs
     os.makedirs(path_to_logs, exist_ok = True) 
 
-    # Ceate a loger
+    # Cerate a logger
     logging.basicConfig(filename=os.path.join(path_to_logs, 'logfile.log'), filemode='w', 
                         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                         level=logging.INFO, datefmt='%Y-%m-%d %H:%M:%S')
@@ -359,11 +359,11 @@ if __name__ == '__main__':
     # Number of the workers (CPUs) to be used by the dataloader (HDD -> RAM -> GPU)
     n_workers = 4
 
-    # Make this true if you have alot of RAM to store all the training dataset in RAM
+    # Make this true if you have a lot of RAM to store all the training dataset in RAM
     # (This will speed up the training at the coast of huge RAM consumption)
     pin_memory = True
 
-    # Chose the GPU cuda devices to make the training go much faster vs CPU use
+    # Chose the GPU CUDA devices to make the training go much faster vs CPU use
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
     # Possibility to use at least two GPUs (available)
@@ -397,7 +397,7 @@ if __name__ == '__main__':
         # Number of device (GPU) in use
         n_devices = 1
     
-    # No GPU avaialble, CPU is used in this case
+    # No GPU available, CPU is used in this case
     else:
         # Log with device the training will be using (CPU in this case)
         logging.info(f'[INFO] Using {device}')
@@ -413,7 +413,7 @@ if __name__ == '__main__':
     #                               (Gray      ->  n_input_channels=1)
     n_input_channels = 1
 
-    # The number of output classes  (N classs  ->  n_output_channels = N)
+    # The number of output classes  (N classes  ->  n_output_channels = N)
     n_output_channels = 1
     #######################################################################
     
@@ -432,7 +432,7 @@ if __name__ == '__main__':
     # Path to the test dataset
     test_dir = os.path.join(main_data_dir, 'test')
 
-    # Path to the refrence image (for normaliztation)
+    # Path to the reference image (for normaliztation)
     ref_image_path = os.path.join(main_data_dir, 'train', '5_img.tif')
     #######################################################################
 
@@ -446,7 +446,7 @@ if __name__ == '__main__':
     # Use all the GPUs we have
     if torch.cuda.device_count() > 1: model = torch.nn.DataParallel(model)
 
-    # Optimzer used for the training phase
+    # Optimizer used for the training phase
     optimizer = torch.optim.RMSprop(model.parameters(), lr=learning_rate)
 
     # The loss function used 
@@ -491,7 +491,7 @@ if __name__ == '__main__':
             else:
                 torch.save(model.state_dict(), os.path.join(path_to_logs, 'backup_interruption.pth'))
 
-            # Log the incedent
+            # Log the incident
             logging.info('[ERROR] Training interrupted! parameters saved ... ')
             
             # Clean exit without any errors 
@@ -504,7 +504,7 @@ if __name__ == '__main__':
         train_loader = []
         val_loader   = []
 
-        # Log the incedent
+        # Log the incident
         logging.info('[INFO] Testing the best model parameters ... ')
 
         # Preparing the validation dataloader
@@ -648,7 +648,7 @@ if __name__ == '__main__':
                 train_loader = []
                 val_loader   = []
 
-                # Log the incedent
+                # Log the incident
                 logging.info(f'[INFO] Fold {i+1} : Testing the best model parameters ... ')
 
                 # Preparing the validation dataloader
@@ -702,7 +702,7 @@ if __name__ == '__main__':
                 # Use all the GPUs we have
                 if torch.cuda.device_count() > 1: model = torch.nn.DataParallel(model)
                 
-                # Optimzer used for the training phase
+                # Optimizer used for the training phase
                 optimizer = torch.optim.RMSprop(model.parameters(), lr=learning_rate)
 
 
