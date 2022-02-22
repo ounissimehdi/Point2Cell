@@ -41,8 +41,8 @@ def dice_coeff_batch(batch_bn_mask, batch_true_bn_mask):
 
     # Compute Dice coefficient for the given batch
     for pair_idx, inputs in enumerate(zip(batch_bn_mask, batch_true_bn_mask)):
-        dice_score +=  single_dice_coeff(inputs[0], inputs[1])
-    
+        try: dice_score += single_dice_coeff(inputs[0], inputs[1])
+        except RuntimeError: dice_score += 0
     # Return the mean Dice coefficient over the given batch
     return dice_score / (pair_idx + 1)
 
@@ -51,17 +51,21 @@ def metrics(p_n, tp, fp, tn, fn):
     tp : true positives, fp: false positives, tn: true negatives, fn: false negatives
     For details please check : https://en.wikipedia.org/wiki/Precision_and_recall
     """
-    # Computing the accuracy
-    accuracy  = (tp + tn) / p_n
+    try:
+        # Computing the accuracy
+        accuracy  = (tp + tn) / p_n
 
-    # Computing the precision
-    precision =  tp / (tp + fp)
+        # Computing the precision
+        precision =  tp / (tp + fp)
 
-    # Computing the recall
-    recall    =  tp / (tp + fn)
+        # Computing the recall
+        recall    =  tp / (tp + fn)
 
-    # Computing the f1
-    f1        =  2 * tp / (2 * tp + fp + fn)
+        # Computing the f1
+        f1        =  2 * tp / (2 * tp + fp + fn)
+    except ZeroDivisionError:
+        precision, recall, accuracy, f1 = 0, 0, 0, 0
+
     return precision, recall, accuracy, f1
 
 def confusion_matrix(prediction, truth):

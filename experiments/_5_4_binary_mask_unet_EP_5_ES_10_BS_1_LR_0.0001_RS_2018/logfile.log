@@ -1,0 +1,142 @@
+2022-02-22 10:41:12 - root - INFO - [INFO] Using cuda
+2022-02-22 10:41:12 - root - INFO - [INFO]      NVIDIA GeForce RTX 2080
+2022-02-22 10:41:12 - root - INFO - [INFO] Caching the given dataset with 5 images and 5 masks
+2022-02-22 10:41:12 - root - INFO - [INFO] Caching the given dataset with 104 images and 104 masks
+2022-02-22 10:41:14 - root - INFO - [INFO] Starting training:
+        Experiment name                  : _5_4_binary_mask_unet_EP_5_ES_10_BS_1_LR_0.0001_RS_2018
+        Epochs number                    : 5
+        Early stop val loss- wait epochs : 10
+        Batch size                       : 1
+        Learning rate                    : 0.0001
+        Training dataset size            : 5
+        Validation dataset size          : 104
+        PyTorch random seed              : 2018
+        Model input channels             : 1
+        Model output channels            : 1
+        Path to logs and ckps            : ..\..\experiments\_5_4_binary_mask_unet_EP_5_ES_10_BS_1_LR_0.0001_RS_2018
+        Cross-validation                 : 0
+    
+2022-02-22 10:41:38 - root - INFO - [INFO] Epoch 0 took 0 h 0 min 24:
+                Mean train loss          :  0.5029938399791718
+                Mean val   loss          :  0.719803484586569
+
+        
+2022-02-22 10:41:38 - root - INFO - 
+                    -- Evaluation of the model --
+                    Dice                :  0.0
+
+                    TP                  :  0.0
+                    FP                  :  0.0
+                    TN                  :  0.4325416271503155
+                    FN                  :  0.5674583728496845
+
+                    Precision           :  0.0
+                    Recall              :  0.0
+                    Accuracy            :  0.0
+                    F1-score            :  0.0
+
+            
+2022-02-22 10:41:39 - root - INFO - 
+                Best epoch 0 :
+            
+            
+2022-02-22 10:41:56 - root - INFO - [INFO] Epoch 1 took 0 h 0 min 17:
+                Mean train loss          :  0.34124346971511843
+                Mean val   loss          :  0.7941854865505145
+
+        
+2022-02-22 10:41:56 - root - INFO - 
+                    -- Evaluation of the model --
+                    Dice                :  0.0
+
+                    TP                  :  0.0
+                    FP                  :  0.0
+                    TN                  :  0.4325416271503155
+                    FN                  :  0.5674583728496845
+
+                    Precision           :  0.0
+                    Recall              :  0.0
+                    Accuracy            :  0.0
+                    F1-score            :  0.0
+
+            
+2022-02-22 10:42:13 - root - INFO - [INFO] Epoch 2 took 0 h 0 min 17:
+                Mean train loss          :  0.3073269546031952
+                Mean val   loss          :  0.9212119734058013
+
+        
+2022-02-22 10:42:13 - root - INFO - 
+                    -- Evaluation of the model --
+                    Dice                :  0.0
+
+                    TP                  :  0.0
+                    FP                  :  0.0
+                    TN                  :  0.4325416271503155
+                    FN                  :  0.5674583728496845
+
+                    Precision           :  0.0
+                    Recall              :  0.0
+                    Accuracy            :  0.0
+                    F1-score            :  0.0
+
+            
+2022-02-22 10:42:30 - root - INFO - [INFO] Epoch 3 took 0 h 0 min 17:
+                Mean train loss          :  0.26152846217155457
+                Mean val   loss          :  1.0369571149349213
+
+        
+2022-02-22 10:42:30 - root - INFO - 
+                    -- Evaluation of the model --
+                    Dice                :  0.0
+
+                    TP                  :  0.0
+                    FP                  :  0.0
+                    TN                  :  0.4325416271503155
+                    FN                  :  0.5674583728496845
+
+                    Precision           :  0.0
+                    Recall              :  0.0
+                    Accuracy            :  0.0
+                    F1-score            :  0.0
+
+            
+2022-02-22 10:42:47 - root - INFO - [INFO] Epoch 4 took 0 h 0 min 17:
+                Mean train loss          :  0.23854449093341829
+                Mean val   loss          :  1.0942845860352883
+
+        
+2022-02-22 10:42:47 - root - INFO - 
+                    -- Evaluation of the model --
+                    Dice                :  0.0
+
+                    TP                  :  0.0
+                    FP                  :  0.0
+                    TN                  :  0.4325416271503155
+                    FN                  :  0.5674583728496845
+
+                    Precision           :  0.0
+                    Recall              :  0.0
+                    Accuracy            :  0.0
+                    F1-score            :  0.0
+
+            
+2022-02-22 10:42:47 - root - INFO - [INFO] All cache deleted
+2022-02-22 10:42:47 - root - INFO - [INFO] All cache deleted
+2022-02-22 10:42:47 - root - INFO - [INFO] Testing the best model parameters ... 
+2022-02-22 10:42:47 - root - INFO - [INFO] Caching the given dataset with 254 images and 254 masks
+2022-02-22 10:43:28 - root - INFO - 
+                -- Testing the best model --
+                Test loss           :  0.699297489378396
+                Dice                :  1.9535015632680287e-10
+
+                TP                  :  0.0
+                FP                  :  0.0
+                TN                  :  0.5065488514937754
+                FN                  :  0.4934511485062246
+
+                Precision           :  0.0
+                Recall              :  0.0
+                Accuracy            :  0.0
+                F1-score            :  0.0
+
+        

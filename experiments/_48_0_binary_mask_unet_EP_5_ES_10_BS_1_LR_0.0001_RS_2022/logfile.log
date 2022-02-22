@@ -1,0 +1,154 @@
+2022-02-22 11:04:57 - root - INFO - [INFO] Using cuda
+2022-02-22 11:04:57 - root - INFO - [INFO]      NVIDIA GeForce RTX 2080
+2022-02-22 11:04:57 - root - INFO - [INFO] Caching the given dataset with 48 images and 48 masks
+2022-02-22 11:04:58 - root - INFO - [INFO] Caching the given dataset with 104 images and 104 masks
+2022-02-22 11:05:00 - root - INFO - [INFO] Starting training:
+        Experiment name                  : _48_0_binary_mask_unet_EP_5_ES_10_BS_1_LR_0.0001_RS_2022
+        Epochs number                    : 5
+        Early stop val loss- wait epochs : 10
+        Batch size                       : 1
+        Learning rate                    : 0.0001
+        Training dataset size            : 48
+        Validation dataset size          : 104
+        PyTorch random seed              : 2022
+        Model input channels             : 1
+        Model output channels            : 1
+        Path to logs and ckps            : ..\..\experiments\_48_0_binary_mask_unet_EP_5_ES_10_BS_1_LR_0.0001_RS_2022
+        Cross-validation                 : 0
+    
+2022-02-22 11:05:45 - root - INFO - [INFO] Epoch 0 took 0 h 0 min 44:
+                Mean train loss          :  0.3125986748685439
+                Mean val   loss          :  0.6913732616947248
+
+        
+2022-02-22 11:05:45 - root - INFO - 
+                    -- Evaluation of the model --
+                    Dice                :  0.0
+
+                    TP                  :  0.31667836812826305
+                    FP                  :  0.013487467399010291
+                    TN                  :  0.4190541597513052
+                    FN                  :  0.2507800047214215
+
+                    Precision           :  0.9591799428931584
+                    Recall              :  0.5581226063327548
+                    Accuracy            :  0.7357325278795682
+                    F1-score            :  0.705588844014319
+
+            
+2022-02-22 11:05:45 - root - INFO - 
+                Best epoch 0 :
+            
+            
+2022-02-22 11:06:22 - root - INFO - [INFO] Epoch 1 took 0 h 0 min 37:
+                Mean train loss          :  0.23223784503837427
+                Mean val   loss          :  0.4873115715499108
+
+        
+2022-02-22 11:06:22 - root - INFO - 
+                    -- Evaluation of the model --
+                    Dice                :  0.0
+
+                    TP                  :  0.4204525122275719
+                    FP                  :  0.023247370353111856
+                    TN                  :  0.40929425679720366
+                    FN                  :  0.14700586062211257
+
+                    Precision           :  0.9476234244053983
+                    Recall              :  0.7410044903501737
+                    Accuracy            :  0.8297467690247756
+                    F1-score            :  0.8316207159688852
+
+            
+2022-02-22 11:06:22 - root - INFO - 
+                Best epoch 1 :
+            
+            
+2022-02-22 11:07:00 - root - INFO - [INFO] Epoch 2 took 0 h 0 min 37:
+                Mean train loss          :  0.21167090410987535
+                Mean val   loss          :  0.21859274446391141
+
+        
+2022-02-22 11:07:00 - root - INFO - 
+                    -- Evaluation of the model --
+                    Dice                :  0.0
+
+                    TP                  :  0.5458485805071317
+                    FP                  :  0.06017570312206562
+                    TN                  :  0.37236592402824986
+                    FN                  :  0.021609792342552774
+
+                    Precision           :  0.900722970634338
+                    Recall              :  0.9619367842870316
+                    Accuracy            :  0.9182145045353816
+                    F1-score            :  0.9302904820547977
+
+            
+2022-02-22 11:07:00 - root - INFO - 
+                Best epoch 2 :
+            
+            
+2022-02-22 11:07:38 - root - INFO - [INFO] Epoch 3 took 0 h 0 min 38:
+                Mean train loss          :  0.18071919586509466
+                Mean val   loss          :  0.20102453561356434
+
+        
+2022-02-22 11:07:38 - root - INFO - 
+                    -- Evaluation of the model --
+                    Dice                :  0.0
+
+                    TP                  :  0.5311435185945951
+                    FP                  :  0.03931287618783804
+                    TN                  :  0.39322875096247745
+                    FN                  :  0.036314854255089395
+
+                    Precision           :  0.9310963499571994
+                    Recall              :  0.9360515564848639
+                    Accuracy            :  0.9243722695570725
+                    F1-score            :  0.9335278561399429
+
+            
+2022-02-22 11:07:38 - root - INFO - 
+                Best epoch 3 :
+            
+            
+2022-02-22 11:08:17 - root - INFO - [INFO] Epoch 4 took 0 h 0 min 38:
+                Mean train loss          :  0.1917256796732545
+                Mean val   loss          :  0.20785594846193606
+
+        
+2022-02-22 11:08:17 - root - INFO - 
+                    -- Evaluation of the model --
+                    Dice                :  0.0
+
+                    TP                  :  0.5310156253667978
+                    FP                  :  0.04078049843127911
+                    TN                  :  0.3917611287190364
+                    FN                  :  0.03644274748288668
+
+                    Precision           :  0.9286943657009156
+                    Recall              :  0.9358270227629528
+                    Accuracy            :  0.9227767540858343
+                    F1-score            :  0.9322085176729022
+
+            
+2022-02-22 11:08:17 - root - INFO - [INFO] All cache deleted
+2022-02-22 11:08:17 - root - INFO - [INFO] All cache deleted
+2022-02-22 11:08:17 - root - INFO - [INFO] Testing the best model parameters ... 
+2022-02-22 11:08:17 - root - INFO - [INFO] Caching the given dataset with 254 images and 254 masks
+2022-02-22 11:08:58 - root - INFO - 
+                -- Testing the best model --
+                Test loss           :  0.15874903748823901
+                Dice                :  0.9464694958502852
+
+                TP                  :  0.47019858998576486
+                FP                  :  0.02962089899018055
+                TN                  :  0.4769279525035948
+                FN                  :  0.023252558520459755
+
+                Precision           :  0.9401903005120207
+                Recall              :  0.9530150962184244
+                Accuracy            :  0.9471265424893597
+                F1-score            :  0.9464694943422907
+
+        

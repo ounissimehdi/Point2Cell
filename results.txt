@@ -10,6 +10,12 @@ FOLD 3	                    0.1348      	94.58%	96.09%  	93.18%	94.43%
 FOLD 4	                    0.1493      	94.01%	95.73%  	92.42%	93.86%
 FOLD 5	                    0.1651      	93.29%	96.51%  	90.35%	93.19%
 
+np.mean([0.1644, 0.1414,0.1348,0.1493,0.1651])
+np.mean([93.40, 94.36, 94.58, 94.01, 93.29])
+np.mean([97.14, 96.05, 96.09, 95.73, 96.51])
+np.mean([90.00, 92.90, 93.18, 92.42, 90.35])
+np.mean([93.37, ])
+
 Validation (best model using the lowest BCE Loss as criteria):
 Cross-validation/metrics	Mean BCE Loss	DICE	PRECISION	RECALL	ACCURACY
 FOLD 1	                    0.1260      	94.86%	94.29%  	95.48%	94.79%
@@ -51,6 +57,12 @@ FOLD 3	                    0.1033	        95.65%	97.74%	    93.65%	95.83%
 FOLD 4	                    0.0929	        96.45%	96.49%  	96.43%	96.54%
 FOLD 5	                    0.0986	        96.00%	97.31%	    94.73%	96.14%
 
+np.mean([0.1032,0.1033,0.1033,0.0929,0.0986])
+np.mean([95.77, 96.01, 95.65, 96.45,96.00])
+np.mean([96.23, 95.47, 97.74, 96.49, 97.31])
+np.mean([95.34, 96.61, 93.65, 96.43, 94.73])
+np.mean([95.88, 96.05, 95.83, 96.54, 96.14])
+
 Validation (best model using the lowest BCE Loss as criteria):
 Cross-validation/metrics	Mean BCE Loss	DICE	PRECISION	RECALL	ACCURACY
 FOLD 1	                    0.1248	        94.95%	94.35%	    95.58%	94.69%
@@ -68,6 +80,9 @@ FOLD 3                  	9.2792e-05
 FOLD 4	                    8.2800e-05
 FOLD 5                  	7.5163e-05
 
+np.mean([9.5669e-05,8.4474e-05,9.2792e-05,8.2800e-05,7.5163e-05])
+
+
 Validation (best model using the lowest BCE Loss as criteria):
 Cross-validation/metrics	Mean MSE
 FOLD 1	                    0.0213
@@ -75,8 +90,7 @@ FOLD 2                  	0.0216
 FOLD 3                  	0.0209
 FOLD 4                  	0.0212
 FOLD 5                  	0.0215
-
-Dim to be added : resolution microns per pixel 
+l 
 
 
                 Time per image              Average Dice coefficient
@@ -130,4 +144,103 @@ Video:
 Add DICE % for each image
 
 
-LICENSE.md
+			                U-Net only(true positives*)		Point2Cell(true positives)
+HeLa-dataset                14.63%(std 11.6%)               95.45%(std 6.10%)   
+Microglial cell dataset     49.76%(std 10.61%)              99.04%(std 1.91%)
+
+*true positive score is computed on the cell detection
+(Fully separated cell -instance segmentation- is a true positive otherwise
+it is a false positive)
+
+HeLa-dataset:
+
+    U-Net only				Point2Cell
+    0%                      100%
+    0%                      100%
+    9.09%                   90.9%
+    0%                      100%
+    18.18%                  90.9%
+    27.27%                  81.81%
+    27.27%                  100%
+    27.27%                  100%
+    27.27%                  90.9%
+    10.0%                   100%
+
+
+np.mean([0,0,9.09,0,18.18,27.27,27.27,27.27,27.27,10.0])
+np.mean([100,100,90.9,100,90.9,81.81,100,100,90.9,100])
+
+    0/10                    10/10
+    0/10                    10/10
+    1/11                    10/11
+    0/11                    11/11
+    2/11                    10/11
+    3/11                    9/11
+    3/11                    11/11
+    3/11                    11/11
+    3/11                    10/11
+    1/10                    10/10
+
+Microglial cell dataset:
+    U-Net only				Point2Cell
+    35.0%                   95.0%
+    34.75%                  100%
+    36.36%                  100%
+    59.09%                  95.45%
+    55.0%                   100%
+    63.15%                  100%
+    47.61%                  100%
+    61.9%                   100%
+    57.14%                  100%
+    47.61%                  100%
+
+np.mean([35.0,34.75,36.36,59.09,55.0,63.15,47.61,61.9,57.14,47.61])
+np.mean([95.0,100,100,95.45,100,100,100,100,100,100])
+    7/20                    19/20
+    8/23                    23/23
+    8/22                    22/22
+    13/22                   21/22
+    11/20                   20/20
+    12/19                   19/19
+    10/21                   21/21
+    13/21                   21/21
+    12/21                   21/21
+    10/21                   21/21
+
+
+           10% of seed-dataset     20% of seed-dataset     Full seed-dataset
+DICE[%]    1.95e-8% std(0.0%)      63.18% std(31.82%)   94.34% std(0.38%)                 
+
+10%:
+1.9535015632680287e-10
+1.9535015632680287e-10
+1.9535015632680287e-10
+1.9535015632680287e-10
+1.9535015632680287e-10
+
+20%
+0.7376148616235088
+0.8554405164061569
+1.9535015632680287e-10
+0.771924444774943
+0.7944631036810987
+
+100%
+0.9464694958502852
+0.9468468014649519
+0.9445823311336398
+0.9431739602032609
+0.9362841616934678
+
+
+
+
+
+import numpy as np
+
+np.mean([0.9464694958502852,
+0.9468468014649519,
+0.9445823311336398,
+0.9431739602032609,
+0.9362841616934678,
+])
