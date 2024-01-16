@@ -348,7 +348,7 @@ email address : daniel.racoceanu@icm-institute.org
 ```bash
 @misc{Github,
   author={Mehdi Ounissi and Daniel Racoceanu},
-  title={Point2Cell: low-shot learning for interactive biomedical image annotation. Instantiation to stain-free phase-contrast microscopy},
+  title={Point2Cell: efficient learning for interactive biomedical image annotation. Instantiation to stain-free phase-contrast microscopy},
   year={2022},
   url={https://github.com/ounissimehdi/Point2Cell},
 }
