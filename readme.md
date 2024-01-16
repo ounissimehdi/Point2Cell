@@ -353,5 +353,3 @@ email address : daniel.racoceanu@icm-institute.org
   url={https://github.com/ounissimehdi/Point2Cell},
 }
 ```
-
-new_dataset
