@@ -4,7 +4,7 @@
 <h1 align="center">
  Point2Cell:
  
- low-shot learning for interactive biomedical image annotation. Instantiation to stain-free phase-contrast microscopy 
+ Efficient interactive biomedical image annotation. Instantiation to stain-free phase-contrast microscopy 
 </h1>
 <p align="center">
    <img width="256" height="256" src="./demo/microglial_cells_demo_1024.gif">
